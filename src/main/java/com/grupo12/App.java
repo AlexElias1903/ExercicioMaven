@@ -21,7 +21,13 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         try (
-            Reader reader = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculos.csv"));
+            Reader veiculoPasseio = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculoPasseio.csv"));
+            CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+
+            Reader veiculoPassageiro = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculoPassageiro.csv"));
+            CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+
+            Reader veiculoUtilitario = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculoUtilitario.csv"));
             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
         ) {
             for (CSVRecord csvRecord : csvParser) {
