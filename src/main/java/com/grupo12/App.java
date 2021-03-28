@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+  
+import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /*
 Exemplo simples de uso da API Apache Commons CVS
@@ -18,8 +22,10 @@ Para executar: java -cp .;.\commons-csv-1.7.jar App.java
 */
 public class App {
     private static final String SAMPLE_CSV_FILE_PATH = "../src/main/java/com/grupo12/";
+    public List<Veiculo> veiculos;
 
     public static void main(String[] args) throws IOException {
+        veiculos = new LinkedList<>();
         try (
             Reader veiculoPasseio = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculoPasseio.csv"));
             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
@@ -30,20 +36,16 @@ public class App {
             Reader veiculoUtilitario = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculoUtilitario.csv"));
             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
         ) {
-            for (CSVRecord csvRecord : csvParser) {
+            for (CSVRecord csvRecord : veiculoPasseio) {
                 // Accessing Values by Column Index
                 String placa = csvRecord.get(0);
                 String marca = csvRecord.get(1);
-                String cor = csvRecord.get(2);
-                String categoria = csvRecord.get(3);
+                String modelo = csvRecord.get(2);
+                Integer ano = Integer(csvRecord.get(3));
+                Double valor = Double(csvRecord.get(4));
+                Integer nroPass = Integer(csvRecord.get(4));
 
-                System.out.println("Record No - " + csvRecord.getRecordNumber());
-                System.out.println("---------------");
-                System.out.println("Placa : " + placa);
-                System.out.println("Marca : " + marca);
-                System.out.println("Cor : " + cor);
-                System.out.println("Categoria : " + categoria);
-                System.out.println("---------------\n\n");
+                veiculos.add(new VeiculoPasseio(placa, marca, modelo, ano, valor, nroPass));
             }
         }
     }
