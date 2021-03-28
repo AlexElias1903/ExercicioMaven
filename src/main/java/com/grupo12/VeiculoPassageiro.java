@@ -1,3 +1,4 @@
+package com.grupo12;
 public class VeiculoPassageiro implements Veiculo {
     private String placa;
     private String marca;
