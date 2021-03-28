@@ -1,5 +1,5 @@
 placa,marca,modelo,ano,valor,consumoKmLt
-"LSO-4890", "Nissan", "Gol",2020, 200000.000, 10.0
-"VPQ-4156", "Hyundai", "Voyage",2011, 45000.000, 25.0
-"BDS-4841", "Chevrolet", "HB20",2020, 13000.000, 30.0
-"QPS-4800", "Kia", "Palio",2016, 35000.000, 15.0
+LSO-4890,Nissan,Gol,2020,200000.000,10.0
+VPQ-4156,Hyundai,Voyage,2011,45000.000,25.0
+BDS-4841,Chevrolet,HB20,2020,13000.000,30.0
+QPS-4800,Kia,Palio,2016,35000.000,15.0

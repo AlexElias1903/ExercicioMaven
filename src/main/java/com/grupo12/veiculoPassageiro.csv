@@ -1,5 +1,5 @@
 placa,marca,modelo,ano,valor,nroPass
-"ABC-1510", "Toyota", "Gol",2020, 20000.000, 5
-"AGE-0051", "Volkswagen ", "Fox",2011, 45000.000, 6
-"AKC-1512", "Ford", "Uno",2015, 15000.000, 7
-"ICJ-1350", "Honda ", "Palio",2021, 25000.000, 5
+ABC-1510,Toyota,Gol,2020,20000.000,5
+AGE-0051,Volkswagen,Fox,2011,45000.000,6
+AKC-1512,Ford,Uno,2015,15000.000,7
+ICJ-1350,Honda,Palio,2021,25000.000,5

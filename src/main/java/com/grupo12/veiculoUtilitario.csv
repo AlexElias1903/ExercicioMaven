@@ -1,5 +1,5 @@
 placa,marca,modelo,ano,valor,capCargaTon,numEixos
-"KDD-1200", "Mercedes", "Palio",2012, 30000.000, 20,4
-"CKI-5619", "Bmw", "Celta",2009, 15000.000, 10,2
-"BUQ-4105", "Ford", "Siena",2018, 25000.000, 15,3
-"KBP-0458", "Honda", "Voyage",2020, 100000.000, 11,5
+KDD-1200,Mercedes,Palio,2012,30000.000,20,4
+CKI-5619,Bmw,Celta,2009,15000.000,10,2
+BUQ-4105,Ford,Siena,2018,25000.000,15,3
+KBP-0458,Honda,Voyage,2020,100000.000,11,5
