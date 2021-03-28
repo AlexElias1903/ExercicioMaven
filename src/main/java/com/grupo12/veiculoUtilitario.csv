@@ -1,5 +1,5 @@
-placa,marca,modelo,ano,valor,consumoKmLt
-ABC1J23,WV,VIRTUS,2018,85000.0,14
-IDZ4J23,HONDA,HRV,2019,96000.0,12
-JJW8L44,TOYOTA,COROLA,2016,65000.0,10
-FUS6C00,VW,TIGUAN,2021,220000.0,12
+placa,marca,modelo,ano,valor,capCargaTon,numEixos
+"KDD-1200", "Mercedes", "Palio",2012, 30000.000, 20,4
+"CKI-5619", "Bmw", "Celta",2009, 15000.000, 10,2
+"BUQ-4105", "Ford", "Siena",2018, 25000.000, 15,3
+"KBP-0458", "Honda", "Voyage",2020, 100000.000, 11,5
