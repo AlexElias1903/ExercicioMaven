@@ -1,3 +1,4 @@
+package com.grupo12;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -16,11 +17,11 @@ Para executar no Linux: java -cp .:commons-csv-1.7.jar App
 Para executar: java -cp .;.\commons-csv-1.7.jar App.java
 */
 public class App {
-    private static final String SAMPLE_CSV_FILE_PATH = "veiculos.csv";
+    private static final String SAMPLE_CSV_FILE_PATH = "../src/main/java/com/grupo12/";
 
     public static void main(String[] args) throws IOException {
         try (
-            Reader reader = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH));
+            Reader reader = Files.newBufferedReader(Paths.get(SAMPLE_CSV_FILE_PATH+"veiculos.csv"));
             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
         ) {
             for (CSVRecord csvRecord : csvParser) {
