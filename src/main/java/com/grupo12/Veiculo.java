@@ -1,3 +1,4 @@
+package com.grupo12;
 public interface Veiculo {
     public String getPlaca();
     public String getMarca();
